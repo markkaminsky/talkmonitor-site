@@ -1,0 +1,9 @@
+# Netlify headers (ignored by other hosts — safe to keep).
+# Assets are un-hashed and deploys are manual drag-and-drop, so no long-lived
+# immutable caching: a day of cache + revalidation keeps updates visible.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+/assets/*
+  Cache-Control: public, max-age=86400

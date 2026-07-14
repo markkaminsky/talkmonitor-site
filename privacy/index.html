@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalkMonitor Privacy Policy — MSK Software</title>
+  <meta name="description" content="Privacy policy for TalkMonitor by MSK Software: everything is processed on your iPhone; we operate no servers and collect nothing.">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fafafa">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f0f0f">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav aria-label="Site">
+    <a href="../">Home</a>
+    <a href="../support/">Support</a>
+    <a href="../privacy/" aria-current="page">Privacy</a>
+  </nav>
+
+  <main>
+  <h1>TalkMonitor Privacy Policy</h1>
+  <p class="updated"><strong>Effective date:</strong> July 12, 2026</p>
+
+  <p>TalkMonitor ("the app") is a quiet conversation companion that measures your voice level and speaking pace, sends haptic nudges, can notice when a moment heats up, and saves optional session summaries on your iPhone. This policy explains what data the app uses, where it stays, and what we never collect.</p>
+
+  <hr>
+
+  <h2>What the app uses and why</h2>
+
+  <h3>Microphone audio (live processing only)</h3>
+  <ul>
+    <li><strong>What:</strong> Live audio from your iPhone microphone while a session is running.</li>
+    <li><strong>Why:</strong> To measure voice volume in real time and trigger haptic nudges when you go above your threshold.</li>
+    <li><strong>Where it goes:</strong> Processed on your device for volume measurement. The same live audio also feeds speech recognition — see the next section for the narrow case where Apple's servers may handle recognition. We do not record, store, or upload raw audio, and audio is never sent to MSK Software or any server we operate.</li>
+    <li><strong>Control:</strong> Microphone access is requested when you first start monitoring. Revoke at any time in iOS Settings → Privacy &amp; Security → Microphone.</li>
+  </ul>
+
+  <h3>Speech recognition (pace, word matching, and tone trend)</h3>
+  <ul>
+    <li><strong>What:</strong> On-device speech recognition (and, when on-device recognition is unavailable for your language or device, Apple's server-side speech APIs) produces a short-lived rolling transcript during a session.</li>
+    <li><strong>Why:</strong> To estimate words per minute; to power optional features you configure — cue-list matching, strong-language alerts (matched against an on-device word list), and alerts for names or phrases you choose to listen for; and, when heated-moment awareness is on, to keep a rolling <em>tone trend</em> — a single number describing whether recent wording sounds tense — computed on-device with Apple's Natural Language framework.</li>
+    <li><strong>Where it goes:</strong> Preferentially processed on your device. The rolling transcript lives only in memory during the session and is discarded when the session ends — it is never saved and never leaves the device through TalkMonitor. When Apple's on-device engine isn't available, speech data may be handled by Apple's speech services under Apple's privacy terms — the app discloses this on the Now screen. We do not receive your speech or transcripts.</li>
+    <li><strong>Control:</strong> Revoke in iOS Settings → Privacy &amp; Security → Speech Recognition. Without speech permission, pace and word-based features won't work. Heated-moment awareness can be turned off in Settings → Comfort &amp; awareness.</li>
+  </ul>
+
+  <h3>Heated moments and optional soft responses (on-device Apple Intelligence)</h3>
+  <ul>
+    <li><strong>What:</strong> When the app reads a moment as heating up, it shows a small advice card. By default the card uses built-in wording and touches no transcript. If you explicitly turn on <strong>Suggest soft responses</strong>, the most recent conversation words (a short rolling window) are shared with Apple Intelligence <strong>on this device only</strong> so the suggested wording fits what's being discussed.</li>
+    <li><strong>Why:</strong> So the soft things the card suggests saying actually match your conversation.</li>
+    <li><strong>Where it goes:</strong> Generation happens entirely on your device with Apple's on-device model. The words used for generation are not saved by the app and are not sent to MSK Software or any third party.</li>
+    <li><strong>Control:</strong> Off by default. Toggle in Settings → Comfort &amp; awareness → Suggest soft responses (shown once Notice heated moments is on). If you also enable spoken advice, lines play only through a connected personal listening route (headphones, AirPods, or other Bluetooth audio) — never the phone's built-in speaker.</li>
+  </ul>
+
+  <h3>Session data (stored on your iPhone)</h3>
+  <ul>
+    <li><strong>What:</strong> Session start/end times, volume and pace statistics, alert events (time, type, the reading at trigger, and — for name alerts — which of your watched names or phrases matched), optional reflection text, optional swear-jar totals, cue lists you create (including which items were checked off and when), and settings such as thresholds, goals, intentions, and preferences — including any names or phrases you enter for name alerts.</li>
+    <li><strong>Why:</strong> So you can review past sessions in Recent and adjust the app to your preferences.</li>
+    <li><strong>Where it goes:</strong> Stored locally on your device using Apple's on-device storage. Not synced to MSK Software servers — we don't operate any.</li>
+    <li><strong>Control:</strong> Delete individual sessions in Recent, edit or clear your name list in Settings, or delete the app to remove all local data.</li>
+    <li><strong>Export:</strong> You can export your session history (stats, alert events including any matched names, and reflection text) as a JSON or CSV file from the Recent tab and share it wherever you choose. Exporting is entirely user-initiated; once shared, the copy you sent is outside the app's control.</li>
+  </ul>
+
+  <h3>On-device Apple Intelligence (optional reflections)</h3>
+  <ul>
+    <li><strong>What:</strong> On supported devices, optional short session reflections generated after you stop a session.</li>
+    <li><strong>Why:</strong> To give you a readable summary of how the session went.</li>
+    <li><strong>Where it goes:</strong> Generated on your device from session statistics (not raw audio, not transcript). Reflection text is saved locally with the session. You can disable rich reflections in Settings.</li>
+    <li><strong>Control:</strong> Toggle off in Settings, or delete the session from Recent.</li>
+  </ul>
+
+  <hr>
+
+  <h2>What we do NOT collect</h2>
+  <ul>
+    <li>We do <strong>not</strong> require an account or sign-in.</li>
+    <li>We do <strong>not</strong> operate servers that receive your voice, transcripts, or session data.</li>
+    <li>We do <strong>not</strong> use third-party analytics SDKs.</li>
+    <li>We do <strong>not</strong> show ads.</li>
+    <li>We do <strong>not</strong> use third-party tracking or advertising frameworks.</li>
+    <li>We do <strong>not</strong> sell, rent, or share your data with anyone.</li>
+    <li>We do <strong>not</strong> collect location, contacts, health records, financial data, or browsing history.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Data retention</h2>
+  <ul>
+    <li><strong>Live audio:</strong> Not retained — processed in real time only while a session is active.</li>
+    <li><strong>Rolling transcript:</strong> Held in memory only, capped in size, discarded when the session ends. Never written to disk.</li>
+    <li><strong>Session records:</strong> Kept on your device until you delete them or delete the app.</li>
+    <li><strong>Swear-jar lifetime total:</strong> Kept on your device until you delete the app (deleting sessions doesn't reset it).</li>
+    <li><strong>Settings:</strong> Kept on your device until you delete the app or reset preferences.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Children's privacy</h2>
+  <p>TalkMonitor is not directed at children under 13. We do not knowingly collect personal information from anyone under 13. If you believe a child has used the app, contact us at the email below.</p>
+
+  <hr>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change what data the app uses, we will update this page and the effective date above. Material changes will be communicated through an in-app notice when practical.</p>
+  <p><em>July 12, 2026:</em> added disclosure of the on-device tone trend and the optional, opt-in soft-response generation that shares recent conversation words with Apple Intelligence on-device.</p>
+
+  <hr>
+
+  <h2>Contact</h2>
+  <p>Questions, deletion requests, or concerns: <a href="mailto:msksoftware@yahoo.ca">msksoftware@yahoo.ca</a></p>
+  </main>
+
+  <footer>
+    &copy; 2026 MSK Software, Manitoba, Canada.<br>
+    Contact: <a href="mailto:msksoftware@yahoo.ca">msksoftware@yahoo.ca</a>
+  </footer>
+</body>
+</html>
